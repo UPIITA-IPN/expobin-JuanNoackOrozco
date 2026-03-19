@@ -8,6 +8,10 @@ def ExpBin(M,e,n):
         if e_bin[i] == '1': C = (C * M) % n
     return C
 
+import sys
+a, b, c = map(int, sys.stdin.read().split())
+print(ExpBin(a, b, c))
+
 #print(ExpBin(3,381,10))
 #print(ExpBin(3,34505,100)) # 3^34505 mod 100 = 43
 #print(ExpBin(2,342405,101)) # 2^342405 mod 101 = 32
